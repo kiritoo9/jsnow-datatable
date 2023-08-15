@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JSnow - Datatable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: #dedede;
+        }
+    </style>
+</head>
+
+<body>
+    <br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h2>JSnow Datatable</h2>
+                    <p>
+                        Create table with id <code class="text-danger">id="datatable"</code> then initialize library using <code
+                            class="text-danger">.jsnowgrid()</code>
+                    </p>
+                    <br />
+                    <table id="datatable" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td>No.</td>
+                                <td>Shinobi Name</td>
+                                <td>Special Jutsu</td>
+                                <td>Clan</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Hyuga Neiji</td>
+                                <td>Byakugan</td>
+                                <td>Hyuga</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Uchiha Sasuke</td>
+                                <td>Sharinggan</td>
+                                <td>Uchiha</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nara Shikamaru</td>
+                                <td>idk maybe his shadow</td>
+                                <td>Nara</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Aburame Shino</td>
+                                <td>His bees</td>
+                                <td>Aburame</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Uzumaki Naruto</td>
+                                <td>Rasenggan</td>
+                                <td>Uzumaki</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br /><br />
+                    <h6 class="text-center">jsnow technology - released in August 2023</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./jsnow-datatable.js"></script>
+    <script>
+        $(function() {
+            $(`#datatable`).jsnowgrid();
+        });
+    </script>
+</body>
+
+</html>
